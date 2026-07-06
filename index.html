@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Online Quran Classes - Teach Me Quran</title>
+    <!-- Icons ke liye FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="full-page-wrapper">
+
+        <!-- ==========================================
+            1. TOP BAR & NAVIGATION HERO SECTION
+           ========================================== -->
+        <header class="top-nav-container">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <span>Follow Us On:</span>
+                    <div class="top-socials">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener" class="social-tw" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <a href="mailto:info@teachmequran.ca"><i class="fa-solid fa-envelope"></i> info@teachmequran.ca</a>
+                    <a href="tel:+447367067430"><i class="fa-solid fa-phone"></i> +447367067430</a>
+                    <span class="trial-badge"><i class="fa-solid fa-gift"></i> 3 Days Free Trial</span>
+                </div>
+            </div>
+
+            <nav class="main-navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="Teach Me Quran" class="logo-img">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li class="has-dropdown">
+                        <a href="javascript:void(0)">OUR COURSES</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="noorani-qaida.html">Noorani Qaida Course</a></li>
+                            <li><a href="tafseer-quran.html">Tafseer Quran Course</a></li>
+                            <li><a href="quran-reading.html">Quran Reading Course</a></li>
+                            <li><a href="tajweed-quran.html">Tajweed Quran Course</a></li>
+                            <li><a href="arabic-language-course.html">Arabic Language Course</a></li>
+                            <li><a href="quran-memorization.html">Quran Memorization Course</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li class="has-dropdown">
+                        <a href="javascript:void(0)">TEACHER</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="male-teacher.html">Male Teacher</a></li>
+                            <li><a href="female-teacher.html">Female Teacher</a></li>
+                        </ul>
+                    </li>
+                <li><a href="fee-structure.html">FEE STRUCTURE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="site-search">
+                        <button class="search-btn" id="searchToggleBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search-box" id="searchBox">
+                            <input type="text" id="searchInput" placeholder="Search courses, pages...">
+                            <div class="search-results" id="searchResults"></div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-contact-us">CONTACT US <i class="fa-solid fa-arrow-right"></i></a>
+                    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <div class="nav-spacer" id="navSpacer"></div>
+
+        <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+        <div class="offcanvas-menu" id="offcanvasMenu">
+            <button class="offcanvas-close" id="offcanvasClose" aria-label="Close menu">&times;</button>
+            <div class="logo offcanvas-logo"><img src="logo.png" alt="Teach Me Quran" class="logo-img"></div>
+            <ul class="offcanvas-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li class="offcanvas-dropdown">
+                    <a href="javascript:void(0)">OUR COURSES</a>
+                    <ul class="offcanvas-sublinks">
+                        <li><a href="noorani-qaida.html">Noorani Qaida Course</a></li>
+                        <li><a href="tajweed-quran.html">Tajweed Quran Course</a></li>
+                        <li><a href="tafseer-quran.html">Tafseer Quran Course</a></li>
+                        <li><a href="quran-reading.html">Quran Reading Course</a></li>
+                        <li><a href="arabic-language-course.html">Arabic Language Course</a></li>
+                        <li><a href="quran-memorization.html">Quran Memorization Course</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li class="offcanvas-dropdown">
+                    <a href="javascript:void(0)">TEACHER</a>
+                    <ul class="offcanvas-sublinks">
+                        <li><a href="male-teacher.html">Male Teacher</a></li>
+                        <li><a href="female-teacher.html">Female Teacher</a></li>
+                    </ul>
+                </li>
+                <li><a href="fee-structure.html">FEE STRUCTURE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <a href="contact.html" class="btn-contact-us offcanvas-cta">CONTACT US <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="offcanvas-socials">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" class="social-tw" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- ==========================================
+            2. HERO SLIDER SECTION
+           ========================================== -->
+        <section class="hero-slider">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=1200');">
+                <div class="hero-content">
+                    <h1>FLEXIBLE ONLINE QURAN <br><span class="highlight">CLASSES FOR ALL AGES</span></h1>
+                    <p>From kids to adults, Teach Me Quran offers personalized Quran learning at your convenience. Interactive one-on-one classes available anytime, anywhere.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn-primary">REGISTER NOW <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="tel:+447367067430" class="btn-secondary"><i class="fa-solid fa-phone"></i> CALL NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/Blue-masjid2.jpg');">
+                <div class="hero-content">
+                    <h1>LEARN QURAN ONLINE <br><span class="highlight">WITH EXPERT TEACHERS</span></h1>
+                    <p>Join Teach Me Quran, a trusted online academy. Learn Quran with Tajweed, Noorani Qaida, Tafseer, and Arabic from qualified male & female tutors.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn-primary">REGISTER NOW <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="tel:+447367067430" class="btn-secondary"><i class="fa-solid fa-phone"></i> CALL NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/BLue-mosque.jpg');">
+                <div class="hero-content">
+                    <h1>CERTIFIED QURAN <br><span class="highlight">TEACHERS WORLDWIDE</span></h1>
+                    <p>Prayer, Pillars of Islam, Dua'a and more, taught directly by certified scholars in a supportive, one-on-one online environment.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn-primary">REGISTER NOW <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="tel:+447367067430" class="btn-secondary"><i class="fa-solid fa-phone"></i> CALL NOW</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            3. ABOUT OUR ACADEMY SECTION
+           ========================================== -->
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image-side">
+                    <div class="promo-box">
+                        <div class="image-frame">
+                            <img src="img/EXP26.jpeg" alt="26 Years Experience Teaching Quran">
+                            <div class="badge-experience"><strong>26+</strong><span>Years Experience</span></div>
+                            <div class="trial-circle">3 DAYS<br><span>Free Trial<br>Classes</span></div>
+                        </div>
+                        <div class="quick-tags">
+                            <span><i class="fa-solid fa-check"></i> 1-on-1 Classes</span>
+                            <span><i class="fa-solid fa-check"></i> Flexible Timings</span>
+                            <span><i class="fa-solid fa-check"></i> Tajweed-ul-Quran</span>
+                        </div>
+                        <a href="https://wa.me/447367067430" class="promo-whatsapp"><i class="fa-brands fa-whatsapp"></i> +447367067430</a>
+                    </div>
+                </div>
+
+                <div class="about-content-side">
+                    <div class="section-tag"><i class="fa-solid fa-book-open"></i> ABOUT OUR ACADEMY</div>
+                    <h2>WHO ARE WE(About Us)?</h2>
+                    <p class="main-desc">Our Academy offers an online learning platform where you can join interactive live courses in Quran, Islamic Studies, and the Arabic Language—all from the comfort of your home. Our teachers bring years of experience in guiding both Arabic and non-Arabic speakers, holding valuable degrees and certifications that make them a true asset to our institution.</p>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <div>
+                            <h3>QUALIFIED TEACHERS</h3>
+                            <p>Our teachers are certified, highly experienced, and specialized in teaching non-Arabic speakers effectively.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h3>FLEXIBLE SCHEDULES</h3>
+                            <p>Students can choose timings that suit their routine, making it easy to balance learning with daily life.</p>
+                        </div>
+                    </div>
+
+                    <a href="tel:+447367067430" class="about-phone"><i class="fa-solid fa-phone"></i> +447367067430</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            4. STATS COUNTER BAR
+           ========================================== -->
+        <section class="stats-bar">
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                <h2 class="counter" data-target="1000">0</h2>
+                <span>STUDENTS ENROLLED</span>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h2 class="counter" data-target="800">0</h2>
+                <span>SESSIONS COMPLETED</span>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h2 class="counter" data-target="50">0</h2>
+                <span>EXPERIENCE TEACHERS</span>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fa-solid fa-user-check"></i></div>
+                <h2 class="counter" data-target="50">0</h2>
+                <span>Professional Teachers</span>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            5. WHY LEARN WITH US SECTION
+           ========================================== -->
+        <section class="why-choose-us">
+            <div class="content-left">
+                <div class="tag-badge"><i class="fa-solid fa-star"></i> WHY CHOOSE US</div>
+                <h1>WHY LEARN WITH US?</h1>
+                
+                <div class="info-block">
+                    <h3>Authentic Knowledge</h3>
+                    <p>Our courses are taught by qualified teachers who ensure every lesson is based on authentic Quran and Sunnah.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Personalized Learning</h3>
+                    <p>We adapt our teaching style to each student's level, making it easier for children and adults to learn effectively.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Progress Tracking</h3>
+                    <p>Regular assessments and feedback help you stay on track and see your improvement step by step.</p>
+                </div>
+            </div>
+            
+            <div class="image-right">
+                <div class="circular-img-wrapper">
+                    <img src="img/Children-Initiati.png" alt="Teacher and Student">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            6. SERVICES SECTION (All 6 Courses)
+           ========================================== -->
+        <section class="services-section">
+            <div class="services-header">
+                <div class="section-tag"><i class="fa-solid fa-cubes"></i> OUR SERVICES</div>
+                <h1>Our Courses</h1>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1: Noorani Qaida -->
+                <div class="service-card" id="noorani">
+                    <div class="card-img-container">
+                        <img src="img/norani-QAIDA.jpg" alt="Noorani Qaida">
+                    </div>
+                    <h3>Noorani Qaida</h3>
+                    <p>Noorani Qaida is the foundation for reading the Holy Quran with correct pronunciation and Tajweed.</p>
+                    <div class="card-buttons">
+                        <a href="https://wa.me/447367067430" class="btn-card-whatsapp"><i class="fa-brands fa-whatsapp"></i> CONTACT US</a>
+                        <a href="noorani-qaida.html" class="btn-card-read"><i class="fa-solid fa-eye"></i> READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tajweed Quran -->
+                <div class="service-card" id="tajweed">
+                    <div class="card-img-container">
+                        <img src="img/tajweed.jpg" alt="Tajweed Quran">
+                    </div>
+                    <h3>Tajweed Quran</h3>
+                    <p>Tajweed is the science of correct Quran pronunciation, ensuring every letter is recited perfectly according to rules.</p>
+                    <div class="card-buttons">
+                        <a href="https://wa.me/447367067430" class="btn-card-whatsapp"><i class="fa-brands fa-whatsapp"></i> CONTACT US</a>
+                        <a href="tajweed-quran.html" class="btn-card-read"><i class="fa-solid fa-eye"></i> READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Tafseer Quran -->
+                <div class="service-card" id="tafseer">
+                    <div class="card-img-container">
+                        <img src="img/tafseer.jpg" alt="Tafseer Quran">
+                    </div>
+                    <h3>Tafseer Quran</h3>
+                    <p>Tafseer is the detailed explanation & interpretation of the Quran, helping learners connect deeply with Allah's guidance.</p>
+                    <div class="card-buttons">
+                        <a href="https://wa.me/447367067430" class="btn-card-whatsapp"><i class="fa-brands fa-whatsapp"></i> CONTACT US</a>
+                        <a href="tafseer-quran.html" class="btn-card-read"><i class="fa-solid fa-eye"></i> READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Quran Reading -->
+                <div class="service-card" id="reading">
+                    <div class="card-img-container">
+                        <img src="img/learnquran.png" alt="Quran Reading">
+                    </div>
+                    <h3>Quran Reading</h3>
+                    <p>We offer structured Quran Reading online classes for kids and adults who want to learn how to read the Holy Quran fluently and accurately.</p>
+                    <div class="card-buttons">
+                        <a href="https://wa.me/447367067430" class="btn-card-whatsapp"><i class="fa-brands fa-whatsapp"></i> CONTACT US</a>
+                        <a href="quran-reading.html" class="btn-card-read"><i class="fa-solid fa-eye"></i> READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Quran Memorization -->
+                <div class="service-card" id="memorization">
+                    <div class="card-img-container">
+                        <img src="img/Quran-memorization.png" alt="Quran Memorization">
+                    </div>
+                    <h3>Quran Memorization</h3>
+                    <p>Memorizing the Quran is a noble journey, and our experienced Huffaz and teachers guide students step by step with patience, dedication, and proven techniques.</p>
+                    <div class="card-buttons">
+                        <a href="https://wa.me/447367067430" class="btn-card-whatsapp"><i class="fa-brands fa-whatsapp"></i> CONTACT US</a>
+                        <a href="quran-memorization.html" class="btn-card-read"><i class="fa-solid fa-eye"></i> READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Arabic Language Course -->
+                <div class="service-card" id="arabic">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400" alt="Arabic Language">
+                    </div>
+                    <h3>Arabic Language Course</h3>
+                    <p>Arabic is the language of the Holy Quran, and understanding it helps learners connect deeply with the literal words of Allah.</p>
+                    <div class="card-buttons">
+                        <a href="https://wa.me/447367067430" class="btn-card-whatsapp"><i class="fa-brands fa-whatsapp"></i> CONTACT US</a>
+                        <a href="arabic-language-course.html" class="btn-card-read"><i class="fa-solid fa-eye"></i> READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            7. BOOK ONLINE CLASS FORM SECTION
+           ========================================== -->
+        <section class="booking-section">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <div class="tag-badge light"><i class="fa-solid fa-laptop"></i> ONLINE CLASS FORM</div>
+                    <h2>Book Your Online Class Now!</h2>
+                    <p class="sub-text">Learn Quran & Arabic Online – Flexible Classes for Kids and Adults with Expert Native & Non-Native Tutors Available 24/7</p>
+                    
+                    <div class="phone-call-box">
+                        <div class="phone-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>
+                            <span>Call for book an order:</span>
+                            <strong>+447367067430</strong>
+                        </div>
+                    </div>
+
+                    <div class="trust-score-box">
+                        <div class="stars">
+                            <h3>4.9/5</h3>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                        <div class="trust-text">
+                            <strong>Trust Score Rated</strong>
+                            <p>Rated by over 20000+ Parents</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-wrapper">
+                    <h3>Book Online Class Now</h3>
+                    <form id="quranBookingForm" novalidate>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="fullName" placeholder="Your Name" required>
+                                <span class="error-msg">Name is required</span>
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                                <span class="error-msg">Valid phone required</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="emailAddress" placeholder="Email Address" required>
+                                <span class="error-msg">Valid email required</span>
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-globe"></i>
+                                <input type="text" id="countryName" placeholder="Country" required>
+                                <span class="error-msg">Country is required</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <i class="fa-solid fa-users-rectangle"></i>
+                                <select id="studentType" required>
+                                    <option value="" disabled selected>Student Type</option>
+                                    <option value="kid">Kid</option>
+                                    <option value="adult">Adult</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-book-open"></i>
+                                <select id="courseTitle" required>
+                                    <option value="" disabled selected>Course Title</option>
+                                    <option value="noorani">Noorani Qaida</option>
+                                    <option value="tajweed">Tajweed Quran</option>
+                                    <option value="tafseer">Tafseer Quran</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <input type="date" id="startDate" required>
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-clock"></i>
+                                <input type="time" id="startTime" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group full-width">
+                            <i class="fa-solid fa-pen-to-square message-icon"></i>
+                            <textarea id="userMessage" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">BOOK ONLINE CLASSES NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            8. OUR LEARNING PROCESS
+           ========================================== -->
+        <section class="learning-process">
+            <div class="process-header">
+                <div class="tag-badge"><i class="fa-solid fa-circle-nodes"></i> OUR LEARNING PROCESS</div>
+                <h1>Our Basic Learning Process In 3 Steps</h1>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card" id="step1">
+                    <div class="step-icon-circle"><i class="fa-solid fa-pointer"></i></div>
+                    <h4>REGISTER ONLINE</h4>
+                    <p>Fill out the quick registration form with your details.</p>
+                    <div class="step-number">01</div>
+                </div>
+
+                <div class="step-card" id="step2">
+                    <div class="step-icon-circle"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h4>CHOOSE YOUR SCHEDULE</h4>
+                    <p>Select your preferred timings and course details.</p>
+                    <div class="step-number">02</div>
+                </div>
+
+                <div class="step-card" id="step3">
+                    <div class="step-icon-circle"><i class="fa-solid fa-desktop"></i></div>
+                    <h4>START LEARNING</h4>
+                    <p>Get connected with our qualified tutors online.</p>
+                    <div class="step-number">03</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            9. LATEST NEWS & BLOG
+           ========================================== -->
+        <section class="blog-section">
+            <div class="blog-header">
+                <div class="tag-badge"><i class="fa-solid fa-bullhorn"></i> OUR NEW UPDATE</div>
+                <h1>Latest News & Blog Post</h1>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img-wrapper">
+                        <img src="img/online-quran-classes-in-france.jpg" alt="Blog 1">
+                        <div class="date-badge"><strong>15</strong><span>MAY, 2023</span></div>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="fa-solid fa-user"></i> by Admin</span>
+                        <span><i class="fa-solid fa-comment"></i> Comments(03)</span>
+                    </div>
+                    <h3>Why Online Quran Classes Are the Best Choice for Kids and Adults</h3>
+                    <a href="blog.html" class="btn-learn-more">LEARN MORE</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img-wrapper">
+                        <img src="img/online-quran-classes-in-dubai-abu-dhabi-sharjah-uae-.jpg" alt="Blog 2">
+                        <div class="date-badge"><strong>16</strong><span>MAY, 2023</span></div>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="fa-solid fa-user"></i> by Admin</span>
+                        <span><i class="fa-solid fa-comment"></i> Comments(03)</span>
+                    </div>
+                    <h3>The Importance of Learning Tajweed in Quran Recitation</h3>
+                    <a href="blog.html" class="btn-learn-more">LEARN MORE</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img-wrapper">
+                        <img src="img/islamophobia-in-west.jpg" alt="Blog 3">
+                        <div class="date-badge"><strong>17</strong><span>MAY, 2023</span></div>
+                    </div>
+                    <div class="blog-meta">
+                        <span><i class="fa-solid fa-user"></i> by Admin</span>
+                        <span><i class="fa-solid fa-comment"></i> Comments(03)</span>
+                    </div>
+                    <h3>A Complete Guide to Quran Memorization (Hifz) Online</h3>
+                    <a href="blog.html" class="btn-learn-more">LEARN MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            10. PAYMENT METHODS
+           ========================================== -->
+        <section class="payment-section">
+            <div class="payment-title"><span>OUR PAYMENT METHODS</span></div>
+            <div class="payment-logos-grid">
+                <div class="logo-box"><i class="fa-brands fa-cc-mastercard" style="color: #eb001b; font-size: 40px;"></i></div>
+                <div class="logo-box"><i class="fa-brands fa-cc-discover" style="color: #f68121; font-size: 40px;"></i></div>
+                <div class="logo-box"><i class="fa-brands fa-cc-amex" style="color: #016fd0; font-size: 40px;"></i></div>
+                <div class="logo-box"><i class="fa-brands fa-cc-paypal" style="color: #003087; font-size: 40px;"></i></div>
+                <div class="logo-box"><i class="fa-brands fa-cc-visa" style="color: #1a1f71; font-size: 40px;"></i></div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            11. CONTACT INFO BAR
+           ========================================== -->
+        <div class="info-bar">
+            <div class="info-bar-inner">
+            <div class="info-logo"><img src="logo.png" alt="Teach Me Quran" class="logo-img"></div>
+            <div class="info-items">
+                <div class="info-item">
+                    <span class="icon-circle"><i class="fa-solid fa-location-dot"></i></span>
+                    <div><span>Our Address</span><strong>Islamabad, Pakistan</strong></div>
+                </div>
+                <div class="info-item">
+                    <span class="icon-circle"><i class="fa-solid fa-envelope"></i></span>
+                    <div><span>Email Address</span><strong>info@teachmequran.ca</strong></div>
+                </div>
+                <div class="info-item">
+                    <span class="icon-circle"><i class="fa-solid fa-phone"></i></span>
+                    <div><span>Phone Number</span><strong>+447367067430</strong></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+            12. FOOTER SECTION
+           ========================================== -->
+        <footer class="footer-main">
+            <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ABOUT ACADEMY</h3>
+                    <p>Oh Allah! Nothing is easy except what you have made easy. If you wish, you can make the difficult easy.</p>
+                    <div class="working-hours">
+                        <strong>WE ARE AVAILABLE</strong>
+                        <p>Mon-Sat: 09.00 am to 6.30 pm</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener" class="social-tw" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/447367067430" target="_blank" rel="noopener" class="social-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="social-li" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>QUICK LINK</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fa-solid fa-arrow-right"></i> About Us</a></li>
+                        <li><a href="blog.html"><i class="fa-solid fa-arrow-right"></i> Our Blogs</a></li>
+                        <li><a href="male-teacher.html"><i class="fa-solid fa-arrow-right"></i> Male Teacher</a></li>
+                        <li><a href="female-teacher.html"><i class="fa-solid fa-arrow-right"></i> Female Teacher</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>SERVICE</h3>
+                    <ul>
+                        <li><a href="noorani-qaida.html"><i class="fa-solid fa-arrow-right"></i> Noorani Qaida Course</a></li>
+                        <li><a href="tafseer-quran.html"><i class="fa-solid fa-arrow-right"></i> Tafseer Quran Course</a></li>
+                        <li><a href="quran-reading.html"><i class="fa-solid fa-arrow-right"></i> Quran Reading Course</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>RECENT POSTS</h3>
+                    <div class="recent-post-item">
+                        <img src="img/islamophobia-in-west.jpg" alt="post">
+                        <div>
+                            <span><i class="fa-solid fa-calendar-days"></i> 22th May, 2023</span>
+                            <h4>History Of ISLAMOPHOBIA</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Teach Me Quran. All Rights Reserved.</p>
+            </div>
+            </div>
+        </footer>
+
+        <!-- ==========================================
+            13. FLOATING INTERACTIVE ACTIONS (WhatsApp & Message)
+           ========================================== -->
+        <div class="floating-actions-left">
+            <!-- Language Switcher Panel -->
+            <div class="lang-popup-panel" id="langPopup">
+                <div class="chat-header">
+                    <h4>Choose Your Language</h4>
+                    <button onclick="toggleLangPopup()">&times;</button>
+                </div>
+                <div class="chat-body">
+                    <p>Assalamu Alaikum! Select or type your language:</p>
+                    <input type="text" id="langSearchInput" placeholder="Type a language...">
+                    <div class="lang-options" id="langOptions">
+                        <button type="button" class="lang-option-btn" data-code="en" data-lang="English" data-flag="gb">English</button>
+                        <button type="button" class="lang-option-btn" data-code="ur" data-lang="اردو (Urdu)" data-flag="pk">اردو (Urdu)</button>
+                        <button type="button" class="lang-option-btn" data-code="ar" data-lang="العربية (Arabic)" data-flag="sa">العربية (Arabic)</button>
+                        <button type="button" class="lang-option-btn" data-code="fr" data-lang="Français (French)" data-flag="fr">Français (French)</button>
+                        <button type="button" class="lang-option-btn" data-code="es" data-lang="Español (Spanish)" data-flag="es">Español (Spanish)</button>
+                        <button type="button" class="lang-option-btn" data-code="tr" data-lang="Turkçe (Turkish)" data-flag="tr">Turkçe (Turkish)</button>
+                        <button type="button" class="lang-option-btn" data-code="fa" data-lang="فارسی (Persian)" data-flag="ir">فارسی (Persian)</button>
+                        <button type="button" class="lang-option-btn" data-code="id" data-lang="Bahasa Indonesia" data-flag="id">Bahasa Indonesia</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sticky Icon -->
+            <button class="floating-btn lang-btn" id="floatLangBtn" onclick="toggleLangPopup()" title="Change Language">
+                <img src="https://flagcdn.com/24x18/gb.png" alt="" id="floatLangFlag" class="float-lang-flag">
+                <span class="btn-label" id="currentLangLabel">EN</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+
+        <div class="floating-actions-container">
+            <button id="backToTopFloat" class="floating-btn top-btn" title="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+            <a href="https://wa.me/447367067430" class="floating-btn wa-btn" target="_blank" title="Chat on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Google Translate (site-wide auto translation, driven by our custom language popup) -->
+    <div id="google_translate_element"></div>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ur,ar,fr,es,tr,fa,id',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajweed Quran - Teach Me Quran Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="full-page-wrapper">
+
+        <header class="top-nav-container">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <span>Follow Us On:</span>
+                    <div class="top-socials">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener" class="social-tw" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <a href="mailto:info@teachmequran.ca"><i class="fa-solid fa-envelope"></i> info@teachmequran.ca</a>
+                    <a href="tel:+447367067430"><i class="fa-solid fa-phone"></i> +447367067430</a>
+                    <span class="trial-badge"><i class="fa-solid fa-gift"></i> 3 Days Free Trial</span>
+                </div>
+            </div>
+
+            <nav class="main-navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="Teach Me Quran" class="logo-img">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li class="has-dropdown">
+                        <a href="javascript:void(0)">OUR COURSES</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="noorani-qaida.html">Noorani Qaida Course</a></li>
+                            <li><a href="tafseer-quran.html">Tafseer Quran Course</a></li>
+                            <li><a href="quran-reading.html">Quran Reading Course</a></li>
+                            <li><a href="tajweed-quran.html">Tajweed Quran Course</a></li>
+                            <li><a href="arabic-language-course.html">Arabic Language Course</a></li>
+                            <li><a href="quran-memorization.html">Quran Memorization Course</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li class="has-dropdown">
+                        <a href="javascript:void(0)">TEACHER</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="male-teacher.html">Male Teacher</a></li>
+                            <li><a href="female-teacher.html">Female Teacher</a></li>
+                        </ul>
+                    </li>
+                <li><a href="fee-structure.html">FEE STRUCTURE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="site-search">
+                        <button class="search-btn" id="searchToggleBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search-box" id="searchBox">
+                            <input type="text" id="searchInput" placeholder="Search courses, pages...">
+                            <div class="search-results" id="searchResults"></div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-contact-us">CONTACT US <i class="fa-solid fa-arrow-right"></i></a>
+                    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <div class="nav-spacer" id="navSpacer"></div>
+
+        <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+        <div class="offcanvas-menu" id="offcanvasMenu">
+            <button class="offcanvas-close" id="offcanvasClose" aria-label="Close menu">&times;</button>
+            <div class="logo offcanvas-logo"><img src="logo.png" alt="Teach Me Quran" class="logo-img"></div>
+            <ul class="offcanvas-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li class="offcanvas-dropdown">
+                    <a href="javascript:void(0)">OUR COURSES</a>
+                    <ul class="offcanvas-sublinks">
+                        <li><a href="noorani-qaida.html">Noorani Qaida Course</a></li>
+                        <li><a href="tajweed-quran.html">Tajweed Quran Course</a></li>
+                        <li><a href="tafseer-quran.html">Tafseer Quran Course</a></li>
+                        <li><a href="quran-reading.html">Quran Reading Course</a></li>
+                        <li><a href="arabic-language-course.html">Arabic Language Course</a></li>
+                        <li><a href="quran-memorization.html">Quran Memorization Course</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li class="offcanvas-dropdown">
+                    <a href="javascript:void(0)">TEACHER</a>
+                    <ul class="offcanvas-sublinks">
+                        <li><a href="male-teacher.html">Male Teacher</a></li>
+                        <li><a href="female-teacher.html">Female Teacher</a></li>
+                    </ul>
+                </li>
+                <li><a href="fee-structure.html">FEE STRUCTURE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <a href="contact.html" class="btn-contact-us offcanvas-cta">CONTACT US <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="offcanvas-socials">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" class="social-tw" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <section class="hero-slider page-banner" style="height:280px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('img/tajweed.jpg'); background-size:cover; background-position:center center; background-repeat:no-repeat; background-attachment:scroll; justify-content:center; text-align:center;">
+            <div class="hero-content" style="max-width:100%;">
+                <h1>Tajweed Quran</h1>
+                <p><a href="index.html" style="color:#e2e8f0; text-decoration:none;">Home</a> / Tajweed Quran</p>
+            </div>
+        </section>
+
+        <section class="course-detail-section">
+            <div class="course-detail-grid">
+                <aside class="course-sidebar">
+                    <div class="sidebar-widget">
+                        <div class="sidebar-search-form">
+                            <input type="text" placeholder="Search...">
+                            <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4>OUR COURSES</h4>
+                        <ul class="course-nav-list">
+                        <li><a href="noorani-qaida.html">Noorani Qaida</a></li>
+                        <li><a href="tajweed-quran.html" class="active">Tajweed Quran</a></li>
+                        <li><a href="tafseer-quran.html">Tafseer Quran</a></li>
+                        <li><a href="quran-reading.html">Quran Reading</a></li>
+                        <li><a href="arabic-language-course.html">Arabic Language Course</a></li>
+                        <li><a href="quran-memorization.html">Quran Memorization</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4>DOWNLOAD TAJWEED QURAN</h4>
+                        <a href="#" class="sidebar-download-item">
+                            <span class="dl-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                            <span class="dl-info"><strong>TAJWEED QURAN</strong><span>DOWNLOAD</span></span>
+                            <span class="dl-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a href="#" class="sidebar-download-item">
+                            <span class="dl-icon"><i class="fa-solid fa-file-lines"></i></span>
+                            <span class="dl-info"><strong>TAJWEED QURAN</strong><span>READ NOW</span></span>
+                            <span class="dl-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+
+                    <div class="sidebar-help-card">
+                        <div class="help-logo"><img src="logo.png" alt="Teach Me Quran"></div>
+                        <h4>Need Help? We Are Here To Help You</h4>
+                        <div class="sidebar-offer-box">
+                            <strong>GET SPECIAL OFFER</strong>
+                            <p>Save up to 10% off</p>
+                            <a href="contact.html" style="text-decoration:none;"><button type="button" class="btn-quote">GET A QUOTE</button></a>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="course-main-content">
+                    <h2>Tajweed Quran Online Classes</h2>
+                    <p>At Teach Me Quran, we offer professional Tajweed Quran online classes for kids and adults who wish to recite the Holy Quran with accuracy and beauty. Tajweed is the science of correct Quran pronunciation, ensuring every letter is recited from its proper articulation point.</p>
+                    <p>Our qualified male and female teachers provide one-on-one interactive sessions, helping students master the rules of Tajweed step by step. Whether you are a beginner learning the basics or an advanced learner polishing your recitation, our Quran with Tajweed classes are tailored to your level. With flexible timings, engaging methods, and worldwide accessibility, Teach Me Quran makes learning Tajweed easy and effective. Build confidence in your recitation and experience the true beauty of the Quran.</p>
+
+                    <div class="course-info-boxes">
+                    <div class="course-info-box">
+                        <h4>Introduction to Tajweed</h4>
+                        <ul>
+                            <li>Meaning & importance of Tajweed</li>
+                            <li>Virtues of reciting Quran with correct pronunciation</li>
+                            <li>Common mistakes in recitation</li>
+                        </ul>
+                    </div>
+                    <div class="course-info-box">
+                        <h4>Makharij (Articulation Points)</h4>
+                        <ul>
+                            <li>Correct pronunciation of Arabic letters</li>
+                            <li>Differences between similar sounds</li>
+                            <li>Practice with individual letters & words</li>
+                        </ul>
+                    </div>
+                    <div class="course-info-box">
+                        <h4>Sifaat (Characteristics of Letters)</h4>
+                        <ul>
+                            <li>Heavy & light letters (Takhkeem & Tarqeeq)</li>
+                            <li>Qalqalah letters</li>
+                            <li>Madd (elongation) rules</li>
+                        </ul>
+                    </div>
+                    <div class="course-info-box">
+                        <h4>Rules of Noon Sakin & Tanween</h4>
+                        <ul>
+                            <li>Izhar (clear pronunciation)</li>
+                            <li>Idgham (merging)</li>
+                            <li>Iqlab (changing)</li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <div class="register-box">
+                        <h3>REGISTER NOW</h3>
+                        <div class="divider-line"></div>
+                        <form id="quranBookingForm" novalidate>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="fullName" placeholder="Your Name" required>
+                                    <span class="error-msg">Name is required</span>
+                                </div>
+                                <div class="input-group">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                                    <span class="error-msg">Valid phone required</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" id="emailAddress" placeholder="Email" required>
+                                    <span class="error-msg">Valid email required</span>
+                                </div>
+                                <div class="input-group">
+                                    <i class="fa-solid fa-venus-mars"></i>
+                                    <select id="genderSelect" required>
+                                        <option value="" disabled selected>Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <select id="courseTitle" required>
+                                        <option value="" disabled selected>Select Course</option>
+                                        <option value="noorani" >Noorani Qaida</option>
+                                        <option value="tajweed" selected>Tajweed Quran</option>
+                                        <option value="tafseer" >Tafseer Quran</option>
+                                        <option value="reading" >Quran Reading</option>
+                                        <option value="arabic" >Arabic Language Course</option>
+                                        <option value="memorization" >Quran Memorization</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                    <select id="teacherSelect" required>
+                                        <option value="" disabled selected>Select Teacher</option>
+                                        <option value="male">Male Teacher</option>
+                                        <option value="female">Female Teacher</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <input type="date" id="startDate" placeholder="Select Date" required>
+                                </div>
+                                <div class="input-group">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <input type="time" id="startTime" placeholder="Select Time" required>
+                                </div>
+                            </div>
+                            <div class="input-group full-width">
+                                <i class="fa-solid fa-pen-to-square message-icon"></i>
+                                <textarea id="userMessage" rows="3" placeholder="Write a Message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">REGISTER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="info-bar">
+            <div class="info-bar-inner">
+            <div class="info-logo"><img src="logo.png" alt="Teach Me Quran" class="logo-img"></div>
+            <div class="info-items">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div><span>Our Address</span><strong>Islamabad, Pakistan</strong></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div><span>Email Address</span><strong>info@teachmequran.ca</strong></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div><span>Phone Number</span><strong>+447367067430</strong></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <footer class="footer-main">
+            <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ABOUT ACADEMY</h3>
+                    <p>Oh Allah! Nothing is easy except what you have made easy. If you wish, you can make the difficult easy.</p>
+                    <div class="working-hours">
+                        <strong>WE ARE AVAILABLE</strong>
+                        <p>Mon-Sat: 09.00 am to 6.30 pm</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener" class="social-tw" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/447367067430" target="_blank" rel="noopener" class="social-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="social-li" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>QUICK LINK</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-arrow-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-arrow-right"></i> About Us</a></li>
+                        <li><a href="blog.html"><i class="fa-solid fa-arrow-right"></i> Our Blogs</a></li>
+                        <li><a href="male-teacher.html"><i class="fa-solid fa-arrow-right"></i> Male Teacher</a></li>
+                        <li><a href="female-teacher.html"><i class="fa-solid fa-arrow-right"></i> Female Teacher</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>SERVICE</h3>
+                    <ul>
+                        <li><a href="noorani-qaida.html"><i class="fa-solid fa-arrow-right"></i> Noorani Qaida Course</a></li>
+                        <li><a href="tafseer-quran.html"><i class="fa-solid fa-arrow-right"></i> Tafseer Quran Course</a></li>
+                        <li><a href="quran-reading.html"><i class="fa-solid fa-arrow-right"></i> Quran Reading Course</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>RECENT POSTS</h3>
+                    <div class="recent-post-item">
+                        <img src="img/islamophobia-in-west.jpg" alt="post">
+                        <div>
+                            <span><i class="fa-solid fa-calendar-days"></i> 22th May, 2023</span>
+                            <h4>History Of ISLAMOPHOBIA</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Teach Me Quran. All Rights Reserved.</p>
+            </div>
+            </div>
+        </footer>
+
+        <div class="floating-actions-left">
+            <!-- Language Switcher Panel -->
+            <div class="lang-popup-panel" id="langPopup">
+                <div class="chat-header">
+                    <h4>Choose Your Language</h4>
+                    <button onclick="toggleLangPopup()">&times;</button>
+                </div>
+                <div class="chat-body">
+                    <p>Assalamu Alaikum! Select or type your language:</p>
+                    <input type="text" id="langSearchInput" placeholder="Type a language...">
+                    <div class="lang-options" id="langOptions">
+                        <button type="button" class="lang-option-btn" data-code="en" data-lang="English" data-flag="gb">English</button>
+                        <button type="button" class="lang-option-btn" data-code="ur" data-lang="اردو (Urdu)" data-flag="pk">اردو (Urdu)</button>
+                        <button type="button" class="lang-option-btn" data-code="ar" data-lang="العربية (Arabic)" data-flag="sa">العربية (Arabic)</button>
+                        <button type="button" class="lang-option-btn" data-code="fr" data-lang="Français (French)" data-flag="fr">Français (French)</button>
+                        <button type="button" class="lang-option-btn" data-code="es" data-lang="Español (Spanish)" data-flag="es">Español (Spanish)</button>
+                        <button type="button" class="lang-option-btn" data-code="tr" data-lang="Turkçe (Turkish)" data-flag="tr">Turkçe (Turkish)</button>
+                        <button type="button" class="lang-option-btn" data-code="fa" data-lang="فارسی (Persian)" data-flag="ir">فارسی (Persian)</button>
+                        <button type="button" class="lang-option-btn" data-code="id" data-lang="Bahasa Indonesia" data-flag="id">Bahasa Indonesia</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sticky Icon -->
+            <button class="floating-btn lang-btn" id="floatLangBtn" onclick="toggleLangPopup()" title="Change Language">
+                <img src="https://flagcdn.com/24x18/gb.png" alt="" id="floatLangFlag" class="float-lang-flag">
+                <span class="btn-label" id="currentLangLabel">EN</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+
+        <div class="floating-actions-container">
+            <button id="backToTopFloat" class="floating-btn top-btn" title="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+            <a href="https://wa.me/447367067430" class="floating-btn wa-btn" target="_blank" title="Chat on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Google Translate (site-wide auto translation, driven by our custom language popup) -->
+    <div id="google_translate_element"></div>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ur,ar,fr,es,tr,fa,id',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+    <script src="script.js"></script>
+</body>
+</html>
